@@ -1,8 +1,8 @@
 <h1>Cocktails List</h1>
 <div class="cards">
   <% @cocktails.each do |cocktail| %>
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dungtcvrp/image/upload/v1594125046/ash-edmonds-fsI-_MRsic0-unsplash_k2vbzg.jpg)">
-    <%= link_to cocktail.name, cocktail_path(cocktail.id) %>
+  <div class="card-category">
+    <%= cl_image_tag cocktail.photo.key, height: 300, width: 300, crop: :fill %> <%= link_to cocktail.name, cocktail_path(cocktail.id) %>
   </div>
   <% end %>
 </div>
