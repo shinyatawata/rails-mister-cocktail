@@ -1,4 +1,11 @@
-<h1>Cocktails List</h1>
+<div class="banner mb-5" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dungtcvrp/image/upload/v1594292970/louis-hansel-shotsoflouis-wmGxNJvxmrw-unsplash_pjqxzz.jpg);">
+  <div class="container">
+    <h1>Create your own cocktail</h1>
+    <p>Change your life and learn to how to make your own cocktail.</p>
+    <a class="btn btn-flat" href="cocktails/new" >Add new cocktail </a>
+  </div>
+</div>
+
 <div class="cards">
   <% @cocktails.each do |cocktail| %>
   <div class="card-category">
@@ -6,4 +13,4 @@
   </div>
   <% end %>
 </div>
-<p> <%= link_to "Add new cocktail", new_cocktail_path %> </p>
+<!-- <p> <%= link_to "Add new cocktail", new_cocktail_path %> </p> -->
